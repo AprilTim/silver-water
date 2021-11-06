@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@400;500;700&family=Yomogi&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+<script defer src="./index.js"></script><link href="./main.css" rel="stylesheet"></head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <img loading="lazy" src="./assets/images/logo.svg" alt="СЕРЕБРЯНАЯ РОСА"/>
+
+        <ul class="menu">
+            <li class="menu-item"><a class="anchor-item" href="#services">Услуги</a></li>
+            <li class="menu-item"><a class="anchor-item" href="#company">Компания</a></li>
+            <li class="menu-item"><a class="anchor-item" href="#technology">Технология</a></li>
+            <li class="menu-item"><a class="anchor-item" href="#feedback">Оставить заявку</a></li>
+            <li class="menu-item"><a class="anchor-item" href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="hero-section">
+
+    <img loading="lazy" class="hero-banner" src="./assets/images/hero.png" alt="hero"/>
+
+
+    <div class="container animate-parallax-up">
+
+        <h1 class="hero-title">СЕРЕБРЯНАЯ РОСА</h1>
+        <p class="hero-subtitle">Розничная продажа очищенной воды<br/>и установка водоматов рядом с вашим домом.</p>
+        <a class="button anchor-item" href="#feedback">Оставить заявку</a>
+
+    </div>
+</section>
+
+<section id="services" class="services-section">
+
+    <div class="container animate-fade-in">
+
+        <div class="title-block">
+            <p class="overhead">УСЛУГИ</p>
+            <h2 class="title">Мы предлагаем</h2>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <div class="mask-wrapper">
+
+                    <img loading="lazy" class="service-image" src="./assets/images/vending.png"/>
+                </div>
+                <h3 class="service-title">Установка водоматов</h3>
+                <p class="service-text">
+                    Наша компания занимается продажей очищенной воды через собственные водоматы по всей области.
+                    <br/>
+                    <br/>
+                    Заявку на установку данного водомота
+                    Вы можете оставить на нашем сайте или по номеру <a class="attention">8-999-999-99-99</a>.</p>
+                <a class="button button__outlined button__block anchor-item" href="#feedback">ОСТАВИТЬ ЗАЯВКУ</a>
+            </div>
+
+            <div class="service">
+
+                <img loading="lazy" class="service-image" src="./assets/images/bottles.png"/>
+                <h3 class="service-title">Розничная продажа</h3>
+                <p class="service-text">
+                    Мы реализуем розничную продажу бутилированной воды различных объемов и сопутствующего оборудования
+                    для дома. А так же продажу очищенной воды в крупных объемах и ее доставкой.</p>
+                <a class="button button__outlined button__block anchor-item" href="#contacts">АДРЕС МАГАЗИНА</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="company" class="company-section">
+    <div class="container animate-fade-in">
+
+        <div class="title-block">
+            <p class="overhead">КОМПАНИЯ</p>
+            <h2 class="title">Наша компания</h2>
+        </div>
+
+        <div class="info">
+            <div class="info-circle animate-parallax-up">
+                <p class="info-circle-text">Более</p>
+                <p class="info-circle-title">100</p>
+                <p class="info-circle-text">Установленных автоматов</p>
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="info-circle animate-parallax-down">
+                <p class="info-circle-text">Почти</p>
+                <p class="info-circle-title">10</p>
+                <p class="info-circle-text">лет на рынке</p>
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="info-circle animate-parallax-up">
+                <p class="info-circle-text">В более чем</p>
+                <p class="info-circle-title">40</p>
+                <p class="info-circle-text">населенных пунктах установлены наши водоматы</p>
+                <div class="lds-ripple">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="technology" class="technology-section">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0"/>
+            <use xlink:href="#gentle-wave" x="48" y="3"/>
+            <use xlink:href="#gentle-wave" x="48" y="5"/>
+            <use xlink:href="#gentle-wave" x="48" y="7"/>
+        </g>
+    </svg>
+
+    <img loading="lazy" loading="lazy" class="technology-background" src="./assets/images/technology_2.png"/>
+
+    <div class="container animate-parallax-up">
+
+        <div class="title-block">
+            <p class="overhead">НАША ВОДА</p>
+            <h2 class="title">КРИСТАЛЬНО ЧИСТАЯ</h2>
+        </div>
+
+        <p class="technology-text">
+            Наша вода проходит много ступеней отчистки прежде чем попасть к Вам.</br>
+            Большая часть наших водотматов
+            заправляется водой нашими сотрудниками, которые круглосуточно доставляют воду с нашего предприятия прямо в
+            водоматы. Это позволяет нам контролировать качество степени очистки нашей воды, централизовано, на нашем
+            преприятии и использовать промышленное оборудование которое повышает качество очистки воды, в отличии от
+            автономных водоматов, которые берут проточную воду и отщичают ее сами на месте. Благодоря этому наша вода
+            потенциально чище чем у других компаний.</p>
+        </br>
+        <p class="technology-text"> Отсутсвие подключения водопровода к нашим водоматам позволяет
+            устанавливать их практически везде. Если Вас инетерует установка в Вашем городе, районе или улице, то Вы
+            может позвонить нам или оставить свою заявку на нашем сайте и мы сами свяжемся с Вами!</p>
+
+        <div class="title-block">
+            <p class="overhead">ИСПОЛЬЗОВАНИЕ</p>
+            <h2 class="title">КАК ЭТО РАБОТАЕТ</h2>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <p class="step-number">1</p>
+                <p class="step-title">Установка тары</p>
+                <p class="step-subtitle">Установите Вашу тару в водомат.</p>
+            </div>
+
+            <div class="step">
+                <p class="step-number">2</p>
+                <p class="step-title">Внесение суммы</p>
+                <p class="step-subtitle">Внесите сумму равную желаемому количеству литров.</p>
+            </div>
+
+            <div class="step">
+                <p class="step-number">3</p>
+                <p class="step-title">Старт</p>
+                <p class="step-subtitle">Нажмите кнопку запуска, после внесения суммы.</p>
+            </div>
+
+            <div class="step">
+                <p class="step-number">4</p>
+                <p class="step-title">Немного подождать</p>
+                <p class="step-subtitle">Водомат начнет наполнять Вашу тару, подождите заверщения процесса.
+                </p>
+            </div>
+
+            <div class="step">
+                <p class="step-number">5</p>
+                <p class="step-title">Готово!</p>
+                <p class="step-subtitle">И это всё! Заберите свою тару.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="feedback" class="feedback-section">
+    <div class="container animate-fade-in">
+
+
+        <div class="feedback-content">
+            <div class="image-block">
+                <img loading="lazy" src="assets/images/form-image.png">
+            </div>
+
+
+            <form>
+                <div class="title-block">
+                <h2 class="title title__white">НАПИШИТЕ НАМ</h2>
+                </div>
+                <input required placeholder="ФИО" type="text" class="input">
+                <input required placeholder="Номер телефона" type="text" class="input">
+                <input placeholder="Email" type="text" class="input">
+                <textarea placeholder="Комментарий..." type="text" class="input"></textarea>
+                <button class="button">Отправить</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0"/>
+        <use xlink:href="#gentle-wave" x="48" y="3"/>
+        <use xlink:href="#gentle-wave" x="48" y="5"/>
+        <use xlink:href="#gentle-wave" x="48" y="7"/>
+    </g>
+</svg>
+
+<div id="root"></div>
+
+<footer>
+
+</footer>
+
+<script src="/public/index.js"></script>
+</body>
+</html>

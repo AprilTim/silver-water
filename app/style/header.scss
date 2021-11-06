@@ -1,0 +1,64 @@
+@import "mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  transition: .3s;
+  backdrop-filter: blur(2px);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    transition: 0.2s;
+  }
+
+  &__fixed {
+    background: rgba(1, 23, 36, 0.4);
+
+    .container {
+      height: 50px;
+    }
+
+    .menu .menu-item a {
+      //color: $brand-color;
+      &:hover {
+        background: rgba(1, 23, 36, 0.8);
+      }
+    }
+  }
+
+  img {
+    height: min(60%, 42px);
+    transition: 0.2s;
+  }
+
+  .menu {
+    display: flex;
+    height: 100%;
+
+    &-item {
+      height: 100%;
+
+      a {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-family: "Montserrat";
+        font-size: 20px;
+        color: white;
+        transition: 0.2s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.05);
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
